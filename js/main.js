@@ -2,10 +2,10 @@
 const header = document.querySelector("header");
 window.addEventListener("scroll", () => {
   let value = window.scrollY
-  if (value < 20) {
+  if (value < 10) {
     header.classList.remove("is_fixed");
     // console.log("header is released", value)
-  } else if (value > 30) {
+  } else if (value > 20) {
     header.classList.add("is_fixed");
     // console.log("header is fixed", value)
   }

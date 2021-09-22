@@ -213,10 +213,12 @@ service
 #recruit {
   .flex {
     align-items: stretch;
+
     .category {
       width: 40%;
       background-color: $color_gray;
       margin-bottom: 0;
+
       p {
         margin: 20px 0;
       }
@@ -236,7 +238,8 @@ service
       .category {
         width: 100%;
         padding: 50px 0;
-        button{
+
+        button {
           margin-top: 20px;
         }
       }
@@ -247,6 +250,24 @@ service
         object-fit: cover;
         object-position: 50% 10%;
       }
+    }
+  }
+}
+
+/*----------------------------------
+contact
+----------------------------------*/
+#contact {
+  background: $color_gray;
+  text-align: center;
+  margin-top: 100px;
+
+  .category {
+    padding: 40px 0;
+    margin-bottom: 0;
+
+    p {
+      padding: 20px 0;
     }
   }
 }

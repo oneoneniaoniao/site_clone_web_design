@@ -4,7 +4,7 @@ header {
   width: 100%;
   font-weight: bold;
   padding: 30px 30px;
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 2;
   transition: all 0.3s ease;
@@ -173,5 +173,10 @@ header {
     .btnMenu.active .btnMenu-line::after {
       transform: rotate(-45deg);
     }
+    #scroll_top_btn{
+      right: 20px;
+      bottom: 20px;
+    }
   }
+
 }

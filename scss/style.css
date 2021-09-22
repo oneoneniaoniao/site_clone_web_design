@@ -493,11 +493,6 @@ img {
   max-width: 100%;
 }
 
-.top_wrapper {
-  position: relative;
-  top: -100px;
-}
-
 .wrapper_1260 {
   padding: 0 15px;
   max-width: 1260px;
@@ -548,8 +543,7 @@ header {
   width: 100%;
   font-weight: bold;
   padding: 30px 30px;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 2;
   -webkit-transition: all 0.3s ease;
@@ -720,6 +714,46 @@ header #scroll_top_btn {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
+  header #scroll_top_btn {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+footer .footer_nav {
+  margin: 0 auto;
+  padding: 60px 20px 30px;
+  max-width: 600px;
+}
+
+footer .footer_nav li {
+  margin: 0 10px;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #888;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  footer .flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .btn_transparent {
@@ -830,6 +864,10 @@ header #scroll_top_btn {
 
 .category span {
   font-size: 1.3rem;
+}
+
+.category p {
+  color: #222;
 }
 
 @media screen and (max-width: 768px) {
@@ -1319,5 +1357,23 @@ service
     -o-object-position: 50% 10%;
        object-position: 50% 10%;
   }
+}
+
+/*----------------------------------
+contact
+----------------------------------*/
+#contact {
+  background: #f0f0f0;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#contact .category {
+  padding: 40px 0;
+  margin-bottom: 0;
+}
+
+#contact .category p {
+  padding: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */
