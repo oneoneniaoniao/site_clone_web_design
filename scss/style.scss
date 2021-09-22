@@ -1,0 +1,24 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/reset";
+@import "base/base";
+
+@import "layout/layout";
+@import "layout/header";
+// @import "layout/footer";
+
+@import "components/button";
+@import "components/category";
+@import "components/main_visual";
+@import "components/scroll";
+@import "components/slide_show";
+
+
+@import "pages/home";
+// @import "pages/news";
+// @import "pages/article";
+// @import "pages/service";
+// @import "pages/works";
+// @import "pages/company";
+// @import "pages/recruit";
+// @import "pages/contact";

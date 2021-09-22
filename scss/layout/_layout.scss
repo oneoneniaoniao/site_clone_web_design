@@ -1,0 +1,38 @@
+
+.top_wrapper {
+  position: relative;
+  top: -100px;
+}
+
+.wrapper_1260 {
+  padding: 0 15px;
+  max-width: 1260px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.wrapper_1110 {
+  padding: 0 15px;
+  max-width: 1110px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.wrapper_920 {
+  padding: 0 15px;
+  max-width: 920px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.centering_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

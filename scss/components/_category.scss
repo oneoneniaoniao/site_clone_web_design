@@ -1,0 +1,30 @@
+
+.category {
+  color: $color_theme;
+  margin-bottom: 20px;
+
+  h3 {
+    font-size: 3.2rem;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+  }
+  span{
+    font-size: 1.3rem;
+  }
+}
+
+@include mq {
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
+}

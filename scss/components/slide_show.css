@@ -1,0 +1,15 @@
+.slide_show {
+  position: relative;
+}
+
+.slide_show .btns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+}
+
+.slide_show .dot {
+  color: red;
+}
+/*# sourceMappingURL=slide_show.css.map */

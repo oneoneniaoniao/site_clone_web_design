@@ -1,0 +1,56 @@
+.scrolldown1 {
+  position: absolute;
+  right: 30px;
+  bottom: 80px;
+
+  span {
+    writing-mode: vertical-rl;
+    position: absolute;
+    left: -7px;
+    top: -60px;
+    color: #eee;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+  }
+}
+
+.scrolldown1::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  width: 1px;
+  height: 0;
+  background: #eee;
+  animation: pathmove 1.5s ease-in-out infinite;
+
+}
+
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    // opacity: 0;
+  }
+
+  20% {
+    height: 100px;
+    top: 0;
+    // opacity: 1;
+  }
+
+  40% {
+    height: 100px;
+    top: 0px;
+    // opacity: 1;
+  }
+
+  60% {
+    height: 0;
+    top: 100px;
+  }
+
+  100% {
+    height: 0;
+    top: 100px;
+  }
+}
