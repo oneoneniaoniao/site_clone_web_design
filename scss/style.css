@@ -566,6 +566,7 @@ header .gnav_list li {
 
 header .gnav_list li a {
   position: relative;
+  font-size: 1.4rem;
 }
 
 header .gnav_list li a::after {
@@ -1329,7 +1330,6 @@ service
 }
 
 #company .wrapper_1110 {
-  margin: 0;
   padding: 100px 0;
 }
 
@@ -1602,6 +1602,94 @@ contact
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+#company_page #company_message .wrapper_1110 {
+  padding: 100px;
+}
+
+#company_page #ceo img {
+  width: 40%;
+  margin-right: 50px;
+}
+
+#company_page #ceo #ceo_message {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#company_page #ceo #ceo_message p {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#company_page #about_company {
+  margin-top: 100px;
+}
+
+#company_page #about_company h3 {
+  font-size: 3.2rem;
+}
+
+#company_page #about_company dl {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+}
+
+#company_page #about_company dl dt {
+  width: 20%;
+}
+
+#company_page #about_company dl dd {
+  width: 80%;
+}
+
+#company_page #about_company dl dt,
+#company_page #about_company dl dd {
+  padding: 30px 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+#company_page #about_company iframe {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #company_page #ceo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #company_page #ceo img {
+    width: 100%;
+    margin-right: 0;
+  }
+  #company_page #ceo #ceo_message > p {
+    margin: 20px 0;
+  }
+  #company_page #about_company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #company_page #about_company h3 {
+    font-size: 2.4rem;
+  }
+  #company_page #about_company dl dt {
+    width: 100%;
+    padding: 20px 5px 5px;
+    border: none;
+  }
+  #company_page #about_company dl dd {
+    width: 100%;
+    padding: 0 5px 20px;
+    border-bottom: 1px solid #ddd;
   }
 }
 /*# sourceMappingURL=style.css.map */
