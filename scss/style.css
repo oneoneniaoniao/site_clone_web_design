@@ -1516,4 +1516,42 @@ contact
     margin-bottom: 8px;
   }
 }
+
+#service_page .flex + .flex {
+  margin-top: 60px;
+}
+
+#service_page .flex {
+  text-align: left;
+}
+
+#service_page .flex img {
+  margin-right: 50px;
+  width: 40%;
+}
+
+#service_page .flex h4 {
+  font-size: 2.4rem;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  #service_page .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #service_page .flex img {
+    width: 100%;
+    margin: 0;
+  }
+  #service_page .flex h4 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  #service_page .flex p {
+    font-size: 1.4rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
