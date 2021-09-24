@@ -1,0 +1,39 @@
+#works_page {
+  #service_items {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: start;
+
+    .service_item {
+      flex: 0 1 30%;
+      margin: 10px 15px 20px;
+
+      img{
+        box-shadow: 0 0 15px rgb(209, 208, 208);
+      }
+      h4 {
+        font-size: 1.8rem;
+        margin: 8px;
+      }
+
+      p {
+        text-align-last: left;
+      }
+
+      a {
+        font-weight: normal;
+        font-size: 1.6rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@include mq {
+  #service_items {
+    flex-direction: column;
+  }
+}

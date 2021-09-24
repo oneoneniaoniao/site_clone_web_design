@@ -1554,4 +1554,54 @@ contact
     font-size: 1.4rem;
   }
 }
+
+#works_page #service_items {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+#works_page #service_items .service_item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  margin: 10px 15px 20px;
+}
+
+#works_page #service_items .service_item img {
+  -webkit-box-shadow: 0 0 15px #d1d0d0;
+          box-shadow: 0 0 15px #d1d0d0;
+}
+
+#works_page #service_items .service_item h4 {
+  font-size: 1.8rem;
+  margin: 8px;
+}
+
+#works_page #service_items .service_item p {
+  text-align-last: left;
+}
+
+#works_page #service_items .service_item a {
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+#works_page #service_items .service_item a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  #service_items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=style.css.map */
