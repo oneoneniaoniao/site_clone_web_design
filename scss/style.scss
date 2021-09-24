@@ -1,5 +1,5 @@
-@import "base/variables";
 @import "base/mixins";
+@import "base/variables";
 @import "base/reset";
 @import "base/base";
 
@@ -10,13 +10,14 @@
 @import "components/button";
 @import "components/category";
 @import "components/main_visual";
+@import "components/sub_visual_and_path";
 @import "components/scroll";
 @import "components/slide_show";
+@import "components/contact";
 
 
-@import "pages/home";
-// @import "pages/news";
-// @import "pages/article";
+@import "pages/index";
+@import "pages/news";
 // @import "pages/service";
 // @import "pages/works";
 // @import "pages/company";

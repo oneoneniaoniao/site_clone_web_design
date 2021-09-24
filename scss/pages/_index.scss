@@ -4,7 +4,7 @@
 #news {
   justify-content: center;
   align-items: flex-start;
-  text-align-last: left;
+  text-align: left;
 
   ul {
     margin-left: 50px;
@@ -33,10 +33,13 @@
           border-radius: 20px;
           width: 80px;
           font-size: 12px;
+          font-weight: bold;
         }
       }
+      a:hover{
+        text-decoration: underline;
+      }
     }
-
   }
 }
 
@@ -257,17 +260,17 @@ service
 /*----------------------------------
 contact
 ----------------------------------*/
-#contact {
-  background: $color_gray;
-  text-align: center;
-  margin-top: 100px;
+// #contact {
+//   background: $color_gray;
+//   text-align: center;
+//   margin-top: 100px;
 
-  .category {
-    padding: 40px 0;
-    margin-bottom: 0;
+//   .category {
+//     padding: 40px 0;
+//     margin-bottom: 0;
 
-    p {
-      padding: 20px 0;
-    }
-  }
-}
+//     p {
+//       padding: 20px 0;
+//     }
+//   }
+// }
