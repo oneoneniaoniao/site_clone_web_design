@@ -5,23 +5,42 @@
   background-size: cover;
   height: 240px;
   text-align: center;
-  .category{
+
+  .category {
     color: white;
     position: relative;
     top: 50%;
   }
 }
 
-.topic_path{
+.topic_path {
   background: #f2f2f2;
-  text-align-last: left;
-  p{
+  text-align: left;
+
+  ol {
     margin: 0 auto;
     max-width: 1110px;
     padding: 10px 20px;
     font-size: 1.2rem;
-    a:hover{
+
+  }
+
+  li {
+    display: inline-block;
+    text-decoration: underline;
+
+    a:hover {
       text-decoration: underline;
     }
+  }
+
+  li::after {
+    content: ">";
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  li:last-child::after {
+    display: none;
   }
 }
