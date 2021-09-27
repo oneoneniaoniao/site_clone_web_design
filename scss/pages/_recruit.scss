@@ -1,6 +1,6 @@
 #recruit_page {
   position: relative;
-  background: url(../../img/bg-geometry.png);
+  background: url(../img/bg-geometry.png);
   margin-bottom: -100px;
   padding-bottom: 50px;
   text-align: center;
@@ -27,7 +27,7 @@
   }
 
   .box_image {
-    background: url(../../img/recruit01.jpg);
+    background: url(../img/recruit01.jpg);
     background-position: center center;
     background-size: cover;
     clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
@@ -115,7 +115,8 @@
   #recruit_detail {
     .wrapper {
       padding: 30px 20px;
-      h4{
+
+      h4 {
         padding-bottom: 0;
       }
 

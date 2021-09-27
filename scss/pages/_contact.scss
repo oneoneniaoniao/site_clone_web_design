@@ -1,0 +1,91 @@
+#contact_page {
+
+  .sub_title {
+    margin-bottom: 30px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .contact_form {
+    background: #f8f8f8;
+    padding: 60px;
+    text-align: left;
+
+    .form_item {
+      margin-bottom: 30px;
+    }
+
+    .form_title {
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+
+    .must::after {
+      position: absolute;
+      right: -35px;
+      bottom: 2px;
+      content: "*必須";
+      color: $color_theme;
+      font-size: 1.2rem;
+    }
+
+    .additional {
+      margin-left: 10px;
+      color: #666;
+      font-size: 1.2rem;
+      font-weight: normal;
+    }
+
+    .form_radio>label {
+      margin-right: 10px;
+    }
+
+    .form_md,
+    .form_sm {
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      background-color: #fff;
+      padding: 5px;
+      width: 300px;
+    }
+
+    .textarea {
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      background-color: #fff;
+      padding: 5px;
+    }
+
+    .form_sm {
+      width: 200px;
+    }
+
+
+  }
+}
+
+@include mq {
+  #contact_page {
+    .sub_title br {
+      display: inline;
+    }
+
+    .contact_form {
+      padding: 30px;
+
+      .form_radio {
+        display: block;
+      }
+
+      .form_md,
+      .form_sm,
+      .textarea {
+        width: 100%;
+      }
+    }
+  }
+}

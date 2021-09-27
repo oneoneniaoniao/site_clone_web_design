@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -1339,7 +1340,7 @@ service
  company
 ----------------------------------*/
 #company {
-  background-image: url(../../img/bg-circle.png), url(../../img/bg-face.png);
+  background-image: url(../img/bg-circle.png), url(../img/bg-face.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -1710,7 +1711,7 @@ contact
 
 #recruit_page {
   position: relative;
-  background: url(../../img/bg-geometry.png);
+  background: url(../img/bg-geometry.png);
   margin-bottom: -100px;
   padding-bottom: 50px;
   text-align: center;
@@ -1738,7 +1739,7 @@ contact
 }
 
 #catch_phrase .box_image {
-  background: url(../../img/recruit01.jpg);
+  background: url(../img/recruit01.jpg);
   background-position: center center;
   background-size: cover;
   -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
@@ -1836,6 +1837,88 @@ contact
   }
   #recruit_page .category > h3 {
     font-size: 2.4rem;
+  }
+}
+
+#contact_page .sub_title {
+  margin-bottom: 30px;
+}
+
+#contact_page .sub_title br {
+  display: none;
+}
+
+#contact_page .contact_form {
+  background: #f8f8f8;
+  padding: 60px;
+  text-align: left;
+}
+
+#contact_page .contact_form .form_item {
+  margin-bottom: 30px;
+}
+
+#contact_page .contact_form .form_title {
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#contact_page .contact_form .must::after {
+  position: absolute;
+  right: -35px;
+  bottom: 2px;
+  content: "*必須";
+  color: #3b0e84;
+  font-size: 1.2rem;
+}
+
+#contact_page .contact_form .additional {
+  margin-left: 10px;
+  color: #666;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+#contact_page .contact_form .form_radio > label {
+  margin-right: 10px;
+}
+
+#contact_page .contact_form .form_md,
+#contact_page .contact_form .form_sm {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 5px;
+  width: 300px;
+}
+
+#contact_page .contact_form .textarea {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 5px;
+}
+
+#contact_page .contact_form .form_sm {
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  #contact_page .sub_title br {
+    display: inline;
+  }
+  #contact_page .contact_form {
+    padding: 30px;
+  }
+  #contact_page .contact_form .form_radio {
+    display: block;
+  }
+  #contact_page .contact_form .form_md,
+  #contact_page .contact_form .form_sm,
+  #contact_page .contact_form .textarea {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

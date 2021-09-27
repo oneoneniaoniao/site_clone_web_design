@@ -39,15 +39,19 @@ dots.forEach((dot, index) => {
   dot.onclick = () => {
     select_img(index)
     clearTimeout(timer);
+    timer = setInterval(changeImg, MS, 1);
   }
 })
 
-const timer = setInterval(changeImg, MS, 1);
+let timer
+timer = setInterval(changeImg, MS, 1);
 document.getElementById("prev").onclick = () => {
   changeImg(-1);
   clearTimeout(timer);
+  timer = setInterval(changeImg, MS, 1);
 }
 document.getElementById("next").onclick = () => {
   changeImg(1);
   clearTimeout(timer);
+  timer = setInterval(changeImg, MS, 1);
 }
