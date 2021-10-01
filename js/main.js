@@ -30,12 +30,13 @@ function scroll_to_top() {
     behavior: 'smooth'
   });
 };
+
 window.addEventListener('scroll', scroll_event);
+
 function scroll_event() {
   if (window.pageYOffset > 400) {
-    scroll_to_top_btn.style.opacity = '1';
+    scroll_to_top_btn.style.visibility = 'visible';
   } else if (window.pageYOffset < 400) {
-    scroll_to_top_btn.style.opacity = '0';
+    scroll_to_top_btn.style.visibility = 'hidden';
   }
 };
-

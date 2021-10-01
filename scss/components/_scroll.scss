@@ -8,7 +8,7 @@
     position: absolute;
     left: -7px;
     top: -60px;
-    color: #eee;
+    color: #fff;
     font-size: 0.7rem;
     letter-spacing: 0.3em;
   }
@@ -17,40 +17,31 @@
 .scrolldown1::after {
   content: "";
   position: absolute;
-  top: 100px;
+  left: 2px;
   width: 1px;
-  height: 0;
-  background: #eee;
-  animation: pathmove 1.5s ease-in-out infinite;
-
+  height: 80px;
+  background:#fff;
+  animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
 }
 
-@keyframes pathmove {
-  0% {
-    height: 0;
-    top: 0;
-    // opacity: 0;
+@keyframes sdl {
+
+  0%{
+    transform: scaleY(0);
+    transform-origin:0 0;
   }
 
-  20% {
-    height: 100px;
-    top: 0;
-    // opacity: 1;
+  50% {
+    transform: scaleY(1);
+    transform-origin: 0 0;
   }
 
-  40% {
-    height: 100px;
-    top: 0px;
-    // opacity: 1;
+  51% {
+    transform: scaleY(1);
+    transform-origin: 0 100%;
   }
-
-  60% {
-    height: 0;
-    top: 100px;
-  }
-
   100% {
-    height: 0;
-    top: 100px;
+    transform: scaleY(0);
+    transform-origin: 0 100%;
   }
 }
